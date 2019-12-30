@@ -1,0 +1,41 @@
+I191228 09:55:23.906774 1 util/log/clog.go:1196  [config] file created at: 2019/12/28 09:55:23
+I191228 09:55:23.906774 1 util/log/clog.go:1196  [config] running on machine: archlinux
+I191228 09:55:23.906774 1 util/log/clog.go:1196  [config] binary: CockroachDB CCL v19.2.1 (x86_64-unknown-linux-gnu, built 2019/11/18 23:23:55, go1.12.12)
+I191228 09:55:23.906774 1 util/log/clog.go:1196  [config] arguments: [cockroach start --insecure]
+I191228 09:55:23.906774 1 util/log/clog.go:1196  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg utf8=✓
+I191228 09:55:23.906769 1 cli/start.go:1138  logging to directory /home/kaijack/Documents/micronaut/micronaut-data/examples/example-jpa/cockroach-data/logs
+W191228 09:55:23.907600 1 cli/start.go:1176  RUNNING IN INSECURE MODE!
+
+- Your cluster is open for any client that can access <all your IP addresses>.
+- Any user, even root, can log in without providing a password.
+- Any user, connecting as root, can read or write any data in your cluster.
+- There is no network encryption nor authentication, and thus no confidentiality.
+
+Check out how to secure your cluster: https://www.cockroachlabs.com/docs/v19.2/secure-a-cluster.html
+I191228 09:55:23.908126 1 server/status/recorder.go:599  available memory from cgroups (8.0 EiB) exceeds system memory 3.7 GiB, using system memory
+W191228 09:55:23.908293 1 cli/start.go:1046  Using the default setting for --cache (128 MiB).
+  A significantly larger value is usually needed for good performance.
+  If you have a dedicated server a reasonable setting is --cache=.25 (944 MiB).
+I191228 09:55:23.908688 1 server/status/recorder.go:599  available memory from cgroups (8.0 EiB) exceeds system memory 3.7 GiB, using system memory
+W191228 09:55:23.908776 1 cli/start.go:1059  Using the default setting for --max-sql-memory (128 MiB).
+  A significantly larger value is usually needed in production.
+  If you have a dedicated server a reasonable setting is --max-sql-memory=.25 (944 MiB).
+I191228 09:55:23.909122 1 server/status/recorder.go:599  available memory from cgroups (8.0 EiB) exceeds system memory 3.7 GiB, using system memory
+I191228 09:55:23.909192 1 cli/start.go:1190  CockroachDB CCL v19.2.1 (x86_64-unknown-linux-gnu, built 2019/11/18 23:23:55, go1.12.12)
+W191228 09:55:24.009799 1 cli/start.go:505  running 'cockroach start' without --join is deprecated.
+Consider using 'cockroach start-single-node' or 'cockroach init' instead.
+I191228 09:55:24.013529 1 server/status/recorder.go:599  available memory from cgroups (8.0 EiB) exceeds system memory 3.7 GiB, using system memory
+I191228 09:55:24.013599 1 server/config.go:394  system total memory: 3.7 GiB
+I191228 09:55:24.013761 1 server/config.go:396  server configuration:
+max offset             500000000
+cache size             128 MiB
+SQL memory pool size   128 MiB
+scan interval          10m0s
+scan min idle time     10ms
+scan max idle time     1s
+event log enabled      true
+I191228 09:55:24.013828 1 cli/start.go:1031  process identity: uid 1000 euid 1000 gid 985 egid 985
+I191228 09:55:24.015061 1 cli/start.go:638  starting cockroach node
+I191228 09:55:24.024777 28 storage/engine/rocksdb.go:621  opening rocksdb instance at "/home/kaijack/Documents/micronaut/micronaut-data/examples/example-jpa/cockroach-data/cockroach-temp707546957"
+I191228 09:55:24.178798 28 server/server.go:927  [n?] monitoring forward clock jumps based on server.clock.forward_jump_check_enabled
+E191228 09:55:24.203069 1 cli/error.go:233  cockroach server exited with error: consider changing the port via --http-addr: listen tcp :8080: bind: address already in use

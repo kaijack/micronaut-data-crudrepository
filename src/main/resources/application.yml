@@ -1,0 +1,23 @@
+---
+micronaut:
+  application:
+    name: backend-master
+  server:
+    port: 8000
+
+---
+datasources:
+  default:
+    # url: jdbc:postgresql://${DATABASE_HOST:localhost}:26257/test3
+    url: jdbc:postgresql://localhost:26257/test2
+    # url: jdbc:mariadb://localhost:3306/test3
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: ''
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+
