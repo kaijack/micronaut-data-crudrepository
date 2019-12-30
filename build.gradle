@@ -60,7 +60,11 @@ dependencies {
     testCompile "io.micronaut.test:micronaut-test-junit5"
     testRuntime "org.junit.jupiter:junit-jupiter-engine"    
 
+    // for cockroach
     runtime "org.postgresql:postgresql:9.3-1100-jdbc4"
+
+    //for mariadb
+    // runtime "org.mariadb.jdbc:mariadb-java-client:2.4.2"
 
     implementation 'com.google.code.gson:gson:2.8.5'
 

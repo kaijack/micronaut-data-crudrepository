@@ -1,10 +1,10 @@
-# Micronaut Data JPA Java Example
+# Micronaut Data crud repository
 
 This example demonstrates Micronaut Data JPA for Java.
 
 ## Example Structure
 
-* `src/main/java/example/domain` - Entities that map onto database tables
+* `src/main/java/example/models` - Entities that map onto database tables
 * `src/main/java/example/repositories` - Micronaut Data Repository interfaces
 * `src/main/java/example/controllers` - Controllers that are injected with the repository interfaces
 * `src/test/java/example` - JUnit 5 tests that test the example.
@@ -12,6 +12,8 @@ This example demonstrates Micronaut Data JPA for Java.
 ## Example Configuration
 
 The example is configured to use an in-memory H2 database via `src/main/resources/application.yml`.
+
+change db to maria db or cockroach
 
 ## Running the example
 
@@ -36,5 +38,3 @@ Or for Maven:
 $ ./mvnw package 
 $ native-image --no-server -cp target/example-jpa-0.1.jar
 ```
-
- 
